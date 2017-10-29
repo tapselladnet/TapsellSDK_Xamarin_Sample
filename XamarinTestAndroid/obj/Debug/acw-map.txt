@@ -1,0 +1,28 @@
+XamarinTestAndroid.MainActivity, XamarinTestAndroid;md561f49ea2600264b15f4e9217fc5c9b8a.MainActivity
+XamarinTestAndroid.MainActivity, XamarinTestAndroid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md561f49ea2600264b15f4e9217fc5c9b8a.MainActivity
+XamarinTestAndroid.MainActivity;md561f49ea2600264b15f4e9217fc5c9b8a.MainActivity
+xamarintestandroid.MainActivity;md561f49ea2600264b15f4e9217fc5c9b8a.MainActivity
+IR.Tapsell.Xamarin.AdRequestListener, TapsellXamarinSdk;md5b2a92b679c80e6353631eb09c5c78835.AdRequestListener
+IR.Tapsell.Xamarin.AdRequestListener, TapsellXamarinSdk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b2a92b679c80e6353631eb09c5c78835.AdRequestListener
+IR.Tapsell.Xamarin.AdRequestListener;md5b2a92b679c80e6353631eb09c5c78835.AdRequestListener
+ir.tapsell.xamarin.AdRequestListener;md5b2a92b679c80e6353631eb09c5c78835.AdRequestListener
+IR.Tapsell.Xamarin.AdShowListener, TapsellXamarinSdk;md5b2a92b679c80e6353631eb09c5c78835.AdShowListener
+IR.Tapsell.Xamarin.AdShowListener, TapsellXamarinSdk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b2a92b679c80e6353631eb09c5c78835.AdShowListener
+IR.Tapsell.Xamarin.AdShowListener;md5b2a92b679c80e6353631eb09c5c78835.AdShowListener
+ir.tapsell.xamarin.AdShowListener;md5b2a92b679c80e6353631eb09c5c78835.AdShowListener
+IR.Tapsell.Xamarin.RewardListener, TapsellXamarinSdk;md5b2a92b679c80e6353631eb09c5c78835.RewardListener
+IR.Tapsell.Xamarin.RewardListener, TapsellXamarinSdk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b2a92b679c80e6353631eb09c5c78835.RewardListener
+IR.Tapsell.Xamarin.RewardListener;md5b2a92b679c80e6353631eb09c5c78835.RewardListener
+ir.tapsell.xamarin.RewardListener;md5b2a92b679c80e6353631eb09c5c78835.RewardListener
+IR.Tapsell.Xamarin.IAdRequestListenerImplementor, TapsellXamarinSdk;mono.ir.tapsell.xamarin.AdRequestListenerImplementor
+IR.Tapsell.Xamarin.IAdRequestListenerImplementor, TapsellXamarinSdk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.ir.tapsell.xamarin.AdRequestListenerImplementor
+IR.Tapsell.Xamarin.IAdRequestListenerImplementor;mono.ir.tapsell.xamarin.AdRequestListenerImplementor
+mono.ir.tapsell.xamarin.AdRequestListenerImplementor;mono.ir.tapsell.xamarin.AdRequestListenerImplementor
+IR.Tapsell.Xamarin.IAdShowListenerImplementor, TapsellXamarinSdk;mono.ir.tapsell.xamarin.AdShowListenerImplementor
+IR.Tapsell.Xamarin.IAdShowListenerImplementor, TapsellXamarinSdk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.ir.tapsell.xamarin.AdShowListenerImplementor
+IR.Tapsell.Xamarin.IAdShowListenerImplementor;mono.ir.tapsell.xamarin.AdShowListenerImplementor
+mono.ir.tapsell.xamarin.AdShowListenerImplementor;mono.ir.tapsell.xamarin.AdShowListenerImplementor
+IR.Tapsell.Xamarin.IRewardListenerImplementor, TapsellXamarinSdk;mono.ir.tapsell.xamarin.RewardListenerImplementor
+IR.Tapsell.Xamarin.IRewardListenerImplementor, TapsellXamarinSdk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.ir.tapsell.xamarin.RewardListenerImplementor
+IR.Tapsell.Xamarin.IRewardListenerImplementor;mono.ir.tapsell.xamarin.RewardListenerImplementor
+mono.ir.tapsell.xamarin.RewardListenerImplementor;mono.ir.tapsell.xamarin.RewardListenerImplementor

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <ManifestDocuments />
+  <NativeLibraries />
+  <Jars>
+    <Jar>obj\Debug\__library_projects__\TapsellXamarinSdk\library_project_imports\classes.jar</Jar>
+    <Jar>obj\Debug\__library_projects__\TapsellXamarinSdk\library_project_imports\__reference__xamarin_sdk.jar</Jar>
+  </Jars>
+</Paths>
