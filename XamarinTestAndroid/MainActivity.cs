@@ -9,12 +9,17 @@ using IR.Tapsell.Xamarin;
 
 namespace XamarinTestAndroid
 {
-    [Activity(Label = "XamarinTestAndroid", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "XamarinTestAndroid", MainLauncher = true, Icon = "@drawable/logo")]
     public class MainActivity : Activity
     {
-        public static Button Request_ad, Show_ad;
+        public static Button Request_ad, Show_ad, request_banner_ad;
         public static string adId = "";
-        public static string zoneId = "";
+
+        protected override void OnResume()
+        {
+            base.OnResume();
+            Tapsell.requestBannerAd(this, "59fd723c404ded000185a184", BannerType.BANNER_320x50, BannerGravity.BOTTOM, BannerGravity.CENTER);
+        }
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -22,10 +27,17 @@ namespace XamarinTestAndroid
 
             SetContentView(Resource.Layout.Main);
 
-            String appKey = "rashssjnjiaeqqeihgjdsihajkbkqgeqqdoftpafmlcoofdflejgmttlercbsdfbnjnjqs";
+            String appKey = "ptmfmdshloahjqioqlhgrgtsnhdcodhelfagaiaqflpfsqroanappmohegqtklggemkmsr";
 
-            Tapsell.initialize(Application.Context, appKey);
-            Tapsell.setRewardListener((string adId, string zoneId, bool rewarded, bool compeleted) => {
+            TapsellConfiguration config = new TapsellConfiguration();
+            config.isDebugMode = true;
+            config.permissionHandlerMode = TapsellConfiguration.PERMISSION_HANDLER_AUTO;
+            //config.maxAllowedBandwidthUsage = 50;
+            //config.maxAllowedBandwidthUsagePercentage = 60;
+
+            Tapsell.initialize(Application.Context,config, appKey);
+
+            Tapsell.setRewardListener((string adId,string zoneId , bool rewarded ,bool compeleted)=>{
                 Console.WriteLine("Ad with id = " + adId + " finished " + (compeleted ? "successfully" : "unsuccessfully"));
                 MainActivity.Show_ad.Enabled = false;
             });
@@ -35,13 +47,12 @@ namespace XamarinTestAndroid
 
             Request_ad.Click += delegate
             {
-                String zoneId = "586e4ed1bc5c28712bd8d50c";
+                String zoneId = "59fd721c404ded000185a005";
                 Tapsell.requestAd(this, zoneId, false,
-                    (string adId, string zone) => {
+                    (string adId , string zone) => {
                         // onAdAvailable
                         Console.WriteLine("On Ad Available adId = " + adId);
                         MainActivity.adId = adId;
-                        MainActivity.zoneId = zoneId;
                         MainActivity.Show_ad.Enabled = true;
                     },
 
@@ -77,8 +88,8 @@ namespace XamarinTestAndroid
 
                 if (adId != "")
                 {
-                    Tapsell.ShowAd(this, adId, false, false, RotationMode.ROTATION_LOCKED_LANDSCAPE, true,
-                        (string adId) => {
+                    Tapsell.showAd(this, adId, false, false, RotationMode.ROTATION_LOCKED_LANDSCAPE, true,
+                        (string adId) =>{
                             //onOpened
                             Console.WriteLine("Ad with id = " + adId + " opened!");
                         },
@@ -88,8 +99,14 @@ namespace XamarinTestAndroid
                         });
                 }
             };
+
+            //request_banner_ad.Click += delegate
+            //{
+            //    Console.WriteLine("show ad adId = " + adId);
+
+            //    Tapsell.requestBannerAd(this, "59a27ab94684655433e74ef8", BannerType.BANNER_320x50, BannerGravity.BOTTOM, BannerGravity.CENTER);
+            //};
         }
     }
-
 }
 

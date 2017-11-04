@@ -8,9 +8,9 @@
   <uses-permission android:name="android.permission.READ_PHONE_STATE" />
   <uses-permission android:name="android.permission.VIBRATE" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:label="XamarinTestAndroid" android:name="mono.android.app.Application" android:allowBackup="true" android:debuggable="true">
+  <application android:label="XamarinTestAndroid" android:icon="@drawable/logo" android:name="mono.android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:name="ir.tapsell.sdk.TapsellAdActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
-    <activity android:icon="@drawable/icon" android:label="XamarinTestAndroid" android:name="md561f49ea2600264b15f4e9217fc5c9b8a.MainActivity">
+    <activity android:icon="@drawable/logo" android:label="XamarinTestAndroid" android:name="md561f49ea2600264b15f4e9217fc5c9b8a.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
