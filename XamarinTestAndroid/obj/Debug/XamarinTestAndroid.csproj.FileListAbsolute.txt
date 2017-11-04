@@ -14,5 +14,6 @@ C:\Users\Mohammad\Documents\Visual Studio 2015\Projects\XamarinTestAndroid\Xamar
 C:\Users\Mohammad\Documents\Visual Studio 2015\Projects\XamarinTestAndroid\XamarinTestAndroid\obj\Debug\res\drawable\logo.png
 C:\Users\Mohammad\Documents\Visual Studio 2015\Projects\XamarinTestAndroid\XamarinTestAndroid\obj\Debug\R.cs.flag
 C:\Users\Mohammad\Documents\Visual Studio 2015\Projects\XamarinTestAndroid\XamarinTestAndroid\obj\Debug\uploadflags.txt
-C:\Users\Mohammad\Documents\Visual Studio 2015\Projects\XamarinTestAndroid\XamarinTestAndroid\obj\Debug\XamarinTestAndroid.dll.mdb
-C:\Users\Mohammad\Documents\Visual Studio 2015\Projects\XamarinTestAndroid\XamarinTestAndroid\bin\Debug\XamarinTestAndroid.dll.mdb
+C:\Users\Mohammad\documents\visual studio 2015\Projects\XamarinTestAndroid\XamarinTestAndroid\obj\Debug\XamarinTestAndroid.csprojResolveAssemblyReference.cache
+C:\Users\Mohammad\documents\visual studio 2015\Projects\XamarinTestAndroid\XamarinTestAndroid\obj\Debug\XamarinTestAndroid.dll.mdb
+C:\Users\Mohammad\documents\visual studio 2015\Projects\XamarinTestAndroid\XamarinTestAndroid\bin\Debug\XamarinTestAndroid.dll.mdb

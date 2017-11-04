@@ -86,10 +86,17 @@ namespace XamarinTestAndroid
             {
                 Console.WriteLine("show ad adId = " + adId);
 
+                TapsellShowAdConfiguration showAdConfig = new TapsellShowAdConfiguration();
+                showAdConfig.isBackDisabled = false;
+                showAdConfig.isImmersiveMode = false;
+                showAdConfig.rotationMode = TapsellShowAdConfiguration.ROTATION_LOCKED_LANDSCAPE;
+                showAdConfig.doesShowDialog = true;
+
+
                 if (adId != "")
                 {
-                    Tapsell.showAd(this, adId, false, false, RotationMode.ROTATION_LOCKED_LANDSCAPE, true,
-                        (string adId) =>{
+                    Tapsell.showAd(this, adId, showAdConfig,
+                        (string adId) => {
                             //onOpened
                             Console.WriteLine("Ad with id = " + adId + " opened!");
                         },
