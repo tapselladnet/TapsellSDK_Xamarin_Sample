@@ -2,16 +2,161 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-    <Button
-        android:id="@+id/Request_ad"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Request_ad" />
-    <Button
-        android:text="Show_ad"
+    android:layout_height="fill_parent"
+    android:background="#AAAAAA">
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:enabled="false"
-        android:id="@+id/Show_ad" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/request_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="request_ad" />
+            <Button
+                android:id="@+id/show_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="show_ad" />
+            <Button
+                android:id="@+id/request_native_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Request_native_banner_ad" />
+            <RelativeLayout
+                android:id="@+id/ad_parent"
+                android:background="#EEEEEE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp">
+                <RelativeLayout
+                    android:id="@+id/rvHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:contentDescription="Logo" />
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/logo"
+                        android:layout_toLeftOf="@id/logo"
+                        android:gravity="right"
+                        android:paddingRight="4dp"
+                        android:text="Title"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/sponsored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignTop="@id/logo"
+                        android:background="#dedede"
+                        android:padding="3dp"
+                        android:text="Sponsored"
+                        android:textColor="#aaaaaa"
+                        android:textSize="10dp" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rvHeader"
+                    android:text="توضیحات این تبلیغ"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14dp" />
+                <ImageView
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/description"
+                    android:contentDescription="Banner" />
+                <Button
+                    android:id="@+id/ctaButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/banner"
+                    android:text="Btn" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/request_native_video_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Request_native_video_ad" />
+            <RelativeLayout
+                android:id="@+id/ad_parent_video"
+                android:background="#EEEEEE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:padding="4dp">
+                <RelativeLayout
+                    android:id="@+id/rvHeader_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/logo_video"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:contentDescription="Logo" />
+                    <TextView
+                        android:id="@+id/title_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/logo_video"
+                        android:layout_toLeftOf="@id/logo_video"
+                        android:gravity="right"
+                        android:paddingRight="4dp"
+                        android:text="Title"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/sponsored_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignTop="@id/logo_video"
+                        android:background="#dedede"
+                        android:padding="3dp"
+                        android:text="Sponsored"
+                        android:textColor="#aaaaaa"
+                        android:textSize="10dp" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/description_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rvHeader_video"
+                    android:text="توضیحات این تبلیغ"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14dp" />
+                <FrameLayout
+                    android:id="@+id/banner_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/description_video"
+                    android:contentDescription="Banner" />
+                <Button
+                    android:id="@+id/ctaButton_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/banner_video"
+                    android:text="Btn" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

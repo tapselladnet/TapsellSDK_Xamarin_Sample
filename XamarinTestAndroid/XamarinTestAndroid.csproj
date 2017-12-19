@@ -47,8 +47,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
-    <Reference Include="TapsellXamarinSdk, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="TapsellXamarinSdk">
       <HintPath>..\..\TapsellSdkXamarin\TapsellSdkXamarin\bin\Release\TapsellXamarinSdk.dll</HintPath>
     </Reference>
   </ItemGroup>

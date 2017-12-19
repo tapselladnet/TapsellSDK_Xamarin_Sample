@@ -6,6 +6,14 @@ IR.Tapsell.Xamarin.AdRequestListener, TapsellXamarinSdk;md5b2a92b679c80e6353631e
 IR.Tapsell.Xamarin.AdRequestListener, TapsellXamarinSdk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b2a92b679c80e6353631eb09c5c78835.AdRequestListener
 IR.Tapsell.Xamarin.AdRequestListener;md5b2a92b679c80e6353631eb09c5c78835.AdRequestListener
 ir.tapsell.xamarin.AdRequestListener;md5b2a92b679c80e6353631eb09c5c78835.AdRequestListener
+IR.Tapsell.Xamarin.NativeBannerAdLoadListener, TapsellXamarinSdk;md5b2a92b679c80e6353631eb09c5c78835.NativeBannerAdLoadListener
+IR.Tapsell.Xamarin.NativeBannerAdLoadListener, TapsellXamarinSdk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b2a92b679c80e6353631eb09c5c78835.NativeBannerAdLoadListener
+IR.Tapsell.Xamarin.NativeBannerAdLoadListener;md5b2a92b679c80e6353631eb09c5c78835.NativeBannerAdLoadListener
+ir.tapsell.xamarin.NativeBannerAdLoadListener;md5b2a92b679c80e6353631eb09c5c78835.NativeBannerAdLoadListener
+IR.Tapsell.Xamarin.NativeVideoAdLoadListener, TapsellXamarinSdk;md5b2a92b679c80e6353631eb09c5c78835.NativeVideoAdLoadListener
+IR.Tapsell.Xamarin.NativeVideoAdLoadListener, TapsellXamarinSdk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b2a92b679c80e6353631eb09c5c78835.NativeVideoAdLoadListener
+IR.Tapsell.Xamarin.NativeVideoAdLoadListener;md5b2a92b679c80e6353631eb09c5c78835.NativeVideoAdLoadListener
+ir.tapsell.xamarin.NativeVideoAdLoadListener;md5b2a92b679c80e6353631eb09c5c78835.NativeVideoAdLoadListener
 IR.Tapsell.Xamarin.AdShowListener, TapsellXamarinSdk;md5b2a92b679c80e6353631eb09c5c78835.AdShowListener
 IR.Tapsell.Xamarin.AdShowListener, TapsellXamarinSdk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b2a92b679c80e6353631eb09c5c78835.AdShowListener
 IR.Tapsell.Xamarin.AdShowListener;md5b2a92b679c80e6353631eb09c5c78835.AdShowListener
@@ -22,6 +30,14 @@ IR.Tapsell.Xamarin.IAdShowListenerImplementor, TapsellXamarinSdk;mono.ir.tapsell
 IR.Tapsell.Xamarin.IAdShowListenerImplementor, TapsellXamarinSdk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.ir.tapsell.xamarin.AdShowListenerImplementor
 IR.Tapsell.Xamarin.IAdShowListenerImplementor;mono.ir.tapsell.xamarin.AdShowListenerImplementor
 mono.ir.tapsell.xamarin.AdShowListenerImplementor;mono.ir.tapsell.xamarin.AdShowListenerImplementor
+IR.Tapsell.Xamarin.INativeBannerAdLoadListenerImplementor, TapsellXamarinSdk;mono.ir.tapsell.xamarin.NativeBannerAdLoadListenerImplementor
+IR.Tapsell.Xamarin.INativeBannerAdLoadListenerImplementor, TapsellXamarinSdk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.ir.tapsell.xamarin.NativeBannerAdLoadListenerImplementor
+IR.Tapsell.Xamarin.INativeBannerAdLoadListenerImplementor;mono.ir.tapsell.xamarin.NativeBannerAdLoadListenerImplementor
+mono.ir.tapsell.xamarin.NativeBannerAdLoadListenerImplementor;mono.ir.tapsell.xamarin.NativeBannerAdLoadListenerImplementor
+IR.Tapsell.Xamarin.INativeVideoAdLoadListenerImplementor, TapsellXamarinSdk;mono.ir.tapsell.xamarin.NativeVideoAdLoadListenerImplementor
+IR.Tapsell.Xamarin.INativeVideoAdLoadListenerImplementor, TapsellXamarinSdk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.ir.tapsell.xamarin.NativeVideoAdLoadListenerImplementor
+IR.Tapsell.Xamarin.INativeVideoAdLoadListenerImplementor;mono.ir.tapsell.xamarin.NativeVideoAdLoadListenerImplementor
+mono.ir.tapsell.xamarin.NativeVideoAdLoadListenerImplementor;mono.ir.tapsell.xamarin.NativeVideoAdLoadListenerImplementor
 IR.Tapsell.Xamarin.IRewardListenerImplementor, TapsellXamarinSdk;mono.ir.tapsell.xamarin.RewardListenerImplementor
 IR.Tapsell.Xamarin.IRewardListenerImplementor, TapsellXamarinSdk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.ir.tapsell.xamarin.RewardListenerImplementor
 IR.Tapsell.Xamarin.IRewardListenerImplementor;mono.ir.tapsell.xamarin.RewardListenerImplementor

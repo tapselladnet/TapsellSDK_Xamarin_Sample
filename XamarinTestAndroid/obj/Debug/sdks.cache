@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Sdk>
-  <AndroidApiLevel>26</AndroidApiLevel>
-  <AndroidApiLevelName>26</AndroidApiLevelName>
-  <AndroidNdkPath>E:\Dev\Other\Sdk\ndk-bundlea\prebuilt\windows-x86_64\bin</AndroidNdkPath>
+  <AndroidApiLevel>27</AndroidApiLevel>
+  <AndroidApiLevelName>27</AndroidApiLevelName>
+  <AndroidNdkPath />
   <AndroidSdkBuildToolsPath>E:\Dev\Other\Sdk\build-tools\27.0.0</AndroidSdkBuildToolsPath>
   <AndroidSdkBuildToolsBinPath>E:\Dev\Other\Sdk\build-tools\27.0.0</AndroidSdkBuildToolsBinPath>
   <AndroidSdkPath>E:\Dev\Other\Sdk</AndroidSdkPath>

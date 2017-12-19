@@ -15,8 +15,26 @@ public final class R {
         public static final int logo=0x7f020001;
     }
     public static final class id {
-        public static final int Request_ad=0x7f050000;
-        public static final int Show_ad=0x7f050001;
+        public static final int ad_parent=0x7f050003;
+        public static final int ad_parent_video=0x7f05000c;
+        public static final int banner=0x7f050009;
+        public static final int banner_video=0x7f050012;
+        public static final int ctaButton=0x7f05000a;
+        public static final int ctaButton_video=0x7f050013;
+        public static final int description=0x7f050008;
+        public static final int description_video=0x7f050011;
+        public static final int logo=0x7f050005;
+        public static final int logo_video=0x7f05000e;
+        public static final int request_ad=0x7f050000;
+        public static final int request_native_ad=0x7f050002;
+        public static final int request_native_video_ad=0x7f05000b;
+        public static final int rvHeader=0x7f050004;
+        public static final int rvHeader_video=0x7f05000d;
+        public static final int show_ad=0x7f050001;
+        public static final int sponsored=0x7f050007;
+        public static final int sponsored_video=0x7f050010;
+        public static final int title=0x7f050006;
+        public static final int title_video=0x7f05000f;
     }
     public static final class layout {
         public static final int main=0x7f030000;
