@@ -380,7 +380,7 @@ Tapsell.ShowAd(this, adId, showAdConfig,
 </tbody>
 </table>
 در ادامه یه نمونه پیاده سازی شده این تابع را مشاهده خواهید کرد:
-<pre style="direction: ltr; margin: 0; line-height: 125%;">Tapsell.requestNativeBannerAd(this, "5a379ee4dc93ee0001c0fb13",
+<pre dir="ltr" style="margin: 0; line-height: 125%;">Tapsell.requestNativeBannerAd(this, "5a379ee4dc93ee0001c0fb13",
                     (string nativeAdId) =&gt; {
                         // onAdFilled
                         Console.WriteLine("onAdFilled adId = " + nativeAdId);
@@ -403,7 +403,7 @@ Tapsell.ShowAd(this, adId, showAdConfig,
 </pre>
 <h3><strong>گام 3: نمایش تبلیغ هم‌نما</strong></h3>
 پس از اینکه شناسه تبلیغ از اکشن onAdFilled دریافت کردید می توانید با استفاده از تابع زیر آنرا نمایش دهید:
-<pre style="direction: ltr; margin: 0; line-height: 125%;">fillNativeBannerAd(Context context, String adId,
+<pre dir="ltr" style="margin: 0; line-height: 125%;">fillNativeBannerAd(Context context, String adId,
     TextView tvTitle, TextView tvDescription,
     ImageView ivBanner, ImageView ivLogo,
     TextView tvCTAButton, TextView tvSponsored,
