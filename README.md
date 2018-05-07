@@ -288,7 +288,7 @@ Tapsell.ShowAd(this, adId, showAdConfig,
 </pre>
 <h3><strong>گام 3: نمایش تبلیغ هم‌نما</strong></h3>
 پس از اینکه شناسه تبلیغ از اکشن onAdFilled دریافت کردید می توانید با استفاده از تابع زیر آنرا نمایش دهید:
-<pre dir="rtl" style="margin: 0; line-height: 125%;">Tapsell.fillNativeVideoAd(Context context, String adId,
+<pre dir="ltr" style="margin: 0; line-height: 125%;">Tapsell.fillNativeVideoAd(Context context, String adId,
                                           bool autoStartVideo, bool fullscreenOnClick,
                                           TextView tvTitle, TextView tvDescription,
                                           ViewGroup vgVideoContainerParent, ImageView ivLogo,
@@ -399,7 +399,8 @@ Tapsell.ShowAd(this, adId, showAdConfig,
                     () =&gt; {
                         // onNoNetwork
                         Console.WriteLine("On No Network!");
-                    });</pre>
+                    });
+</pre>
 <h3><strong>گام 3: نمایش تبلیغ هم‌نما</strong></h3>
 پس از اینکه شناسه تبلیغ از اکشن onAdFilled دریافت کردید می توانید با استفاده از تابع زیر آنرا نمایش دهید:
 <pre style="direction: ltr; margin: 0; line-height: 125%;">fillNativeBannerAd(Context context, String adId,
@@ -411,7 +412,7 @@ Tapsell.ShowAd(this, adId, showAdConfig,
 &nbsp;
 
 ورودی adId شناسه تبلیغ است که در گام قبل و در اکشن onAdFilled به شما داده شده‌است. ورودی‌های بعدی به ترتیب نشانگر عنوان تبلیغ، توضیحات تبلیغ، ImageView نمایش دهنده بنر، لوگو تبلیغ، دکمه دعوت از کاربر و نشانگر آگهی بودن می‌باشند. آخرین ورودی نیز layout دربرگیرنده تبلیغ هست. یک نمونه پیاده سازی تابع را در زیر مشاهده میکنید که ویو های آن قبلا در onCreate اکتیویتی با تابع FindViewById شناسانده شده اند:
-<pre style="direction: ltr; margin: 0; line-height: 125%;">Tapsell.fillNativeBannerAd(this, nativeAdId, title, 
+<pre dir="ltr" style="margin: 0; line-height: 125%;">Tapsell.fillNativeBannerAd(this, nativeAdId, title, 
      description, banner, logo, ctaButton, sponsored, adParent);</pre>
 <div id="s3gt_translate_tooltip_mini" class="s3gt_translate_tooltip_mini_box" style="background: initial !important; border: initial !important; border-radius: initial !important; border-spacing: initial !important; border-collapse: initial !important; direction: ltr !important; flex-direction: initial !important; font-weight: initial !important; height: initial !important; letter-spacing: initial !important; min-width: initial !important; max-width: initial !important; min-height: initial !important; max-height: initial !important; margin: auto !important; outline: initial !important; padding: initial !important; position: absolute; table-layout: initial !important; text-align: initial !important; text-shadow: initial !important; width: initial !important; word-break: initial !important; word-spacing: initial !important; overflow-wrap: initial !important; box-sizing: initial !important; display: initial !important; color: inherit !important; font-size: 13px !important; font-family: X-LocaleSpecific, sans-serif, Tahoma, Helvetica !important; line-height: 13px !important; vertical-align: top !important; white-space: inherit !important; left: 968px; top: 1098px;"></div>
 <div id="s3gt_translate_tooltip_mini" class="s3gt_translate_tooltip_mini_box" style="background: initial !important; border: initial !important; border-radius: initial !important; border-spacing: initial !important; border-collapse: initial !important; direction: ltr !important; flex-direction: initial !important; font-weight: initial !important; height: initial !important; letter-spacing: initial !important; min-width: initial !important; max-width: initial !important; min-height: initial !important; max-height: initial !important; margin: auto !important; outline: initial !important; padding: initial !important; position: absolute; table-layout: initial !important; text-align: initial !important; text-shadow: initial !important; width: initial !important; word-break: initial !important; word-spacing: initial !important; overflow-wrap: initial !important; box-sizing: initial !important; display: initial !important; color: inherit !important; font-size: 13px !important; font-family: X-LocaleSpecific, sans-serif, Tahoma, Helvetica !important; line-height: 13px !important; vertical-align: top !important; white-space: inherit !important; left: 10px; top: 487px;"></div>
