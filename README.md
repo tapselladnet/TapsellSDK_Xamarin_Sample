@@ -202,7 +202,7 @@ Tapsell.ShowAd(this, adId, showAdConfig,
 در تبلیغات هم‌نما، شما قادر هستید ویژگی‌های ظاهری هر یک از اجزای تبلیغ (اندازه، محل قرارگیری، رنگ فونت و...) را بصورتی که هماهنگ با محتوای اپلیکیشن شما باشد تعیین کنید. لذا باید Layout هم‌نما اپلیکیشن خود را که مدنظرتان است ایجاد کرده و به SDK تپسل بدهید.
 
 هرقالب محتوای که برای تبلیغات هم‌نما ویدئویی ارائه می‌شود میبایست دارای حداقل سه آیتم عنوان تبلیغ، نشانگر تبلیغ بودن و ویدئو را دارا باشد. SDK تپسل جهت نمایش ویدئو در تبلیغات هم‌نما، از پلیر مخصوص خود استفاده می‌کند که برای نسخه‌های مختلف اندروید و استفاده در صفحات قابل اسکرول بهینه‌سازی شده است. لذا برای نمایش ویدئو کافیست یک layout در فایل <code>xml</code> خود اضافه کنید که در اصل در بر گیرنده پلیر ویدئو خواهد بود. شکل کلی قالب محتوایی تبلیغات هم‌نما ویدئویی بصورت زیر می‌باشد:
-<pre style="direction: ltr; margin: 0; line-height: 125%;"><span style="color: #000080;">&lt;RelativeLayout</span> 
+<pre style="margin: 0; line-height: 125%;" dir="ltr"><span style="color: #000080;">&lt;RelativeLayout</span> 
     <span style="color: #800080;">android</span>:layout_width=<span style="color: #008000;">"match_parent"</span>
     <span style="color: #800080;">android</span>:layout_height=<span style="color: #008000;">"wrap_content"</span><span style="color: #000080;">&gt;</span>
 
@@ -236,7 +236,7 @@ Tapsell.ShowAd(this, adId, showAdConfig,
 در تپسل، تبلیغ می تواند در ناحیه‌های مختلفی از برنامه شما (مانند منو اصلی، بین پست‌ها و ...) پخش شود. در تپسل به این ناحیه‌ها zone گفته می شود. ناحیه‌های هر اپلیکیشن در داشبورد تپسل تعریف می شوند.
 
 با اجرای تابع زیر، می‌توانید یک درخواست تبلیغ به تپسل ارسال کرده و یک تبلیغ دریافت نمایید:
-<pre style="direction: ltr; margin: 0; line-height: 125%;">Tapsell.requestNativeVideoAd(Context context, string zoneId, 
+<pre dir="ltr" style="margin: 0; line-height: 125%;">Tapsell.requestNativeVideoAd(Context context, string zoneId, 
    Action&lt;string&gt; onAdFilled, Action&lt;string&gt; onError, 
    Action onNoAdAvailable, Action onNoNetwork)</pre>
 هر درخواست شامل یک ورودی شناسه تبلیغ‌گاه (<code>zoneId)</code> است که نشانگر محل نمایش تبلیغ در اپلیکیشن شماست. تبلیغ‌گاه مرتبط با این شناسه در داشبورد تپسل باید از نوع بنری هم‌نما باشد. نتیجه درخواست بصورت اکشن به برنامه شما بازگردانده می‌شود. توضیحات اکشن های موجود در جدول زیر آمده است:
@@ -265,7 +265,7 @@ Tapsell.ShowAd(this, adId, showAdConfig,
 </tbody>
 </table>
 در ادامه یه نمونه پیاده سازی شده این تابع را مشاهده خواهید کرد:
-<pre style="direction: ltr; margin: 0; line-height: 125%;">Tapsell.requestNativeVideoAd(this,"5a379f01799e6f0001a460a2",
+<pre dir="ltr" style="dmargin: 0; line-height: 125%;">Tapsell.requestNativeVideoAd(this,"5a379f01799e6f0001a460a2",
         (string nativeAdId) =&gt; {
         // onAdFilled
         Console.WriteLine("onAdFilled adId = " + nativeAdId);
@@ -284,7 +284,8 @@ Tapsell.ShowAd(this, adId, showAdConfig,
           () =&gt; {
           // onNoNetwork
           Console.WriteLine("On No Network!");
-      });</pre>
+      });
+</pre>
 <h3><strong>گام 3: نمایش تبلیغ هم‌نما</strong></h3>
 پس از اینکه شناسه تبلیغ از اکشن onAdFilled دریافت کردید می توانید با استفاده از تابع زیر آنرا نمایش دهید:
 <pre style="direction: ltr; margin: 0; line-height: 125%;">Tapsell.fillNativeVideoAd(Context context, String adId,
@@ -297,7 +298,7 @@ Tapsell.ShowAd(this, adId, showAdConfig,
 &nbsp;
 
 ورودی nativeAdId شناسه تبلیغ است که در گام قبل و در اکشن onAdFilled به شما داده شده‌است. ورودی <code>autoStartVideo</code> مشخص کننده این است که ویدئو بعد از لود شدن در صفحه بصورت اتوماتیک اجرا شود یا خیر. همچنین <code>fullscreenOnClick</code> تعیین کننده این است که آیا زمان کلیک کردن کاربر روی ویدئو باید ویدئو بصورت تمام صفحه نمایش داده شود یا خیر. ورودی‌های بعدی به ترتیب نشانگر عنوان تبلیغ، توضیحات تبلیغ، layout نمایش ویدئو، لوگو تبلیغ، دکمه دعوت از کاربر و نشانگر آگهی بودن می‌باشند. آخرین ورودی نیز layout دربرگیرنده تبلیغ هست که اختیاری بوده و می‌تواند <code>Null</code> باشد. یک نمونه پیاده سازی تابع را در زیر مشاهده میکنید که ویو های آن قبلا در onCreate اکتیویتی با تابع FindViewById شناسانده شده اند:
-<pre style="direction: ltr; margin: 0; line-height: 125%;">Tapsell.fillNativeVideoAd(this, nativeAdId, 
+<pre dir="ltr" style="margin: 0; line-height: 125%;">Tapsell.fillNativeVideoAd(this, nativeAdId, 
       true, true, title_video, description_video, banner_video, logo_video, ctaButton_video, 
       sponsored_video, adParent_video);</pre>
 <div id="s3gt_translate_tooltip_mini" class="s3gt_translate_tooltip_mini_box" style="background: initial !important; border: initial !important; border-radius: initial !important; border-spacing: initial !important; border-collapse: initial !important; direction: ltr !important; flex-direction: initial !important; font-weight: initial !important; height: initial !important; letter-spacing: initial !important; min-width: initial !important; max-width: initial !important; min-height: initial !important; max-height: initial !important; margin: auto !important; outline: initial !important; padding: initial !important; position: absolute; table-layout: initial !important; text-align: initial !important; text-shadow: initial !important; width: initial !important; word-break: initial !important; word-spacing: initial !important; overflow-wrap: initial !important; box-sizing: initial !important; display: initial !important; color: inherit !important; font-size: 13px !important; font-family: X-LocaleSpecific, sans-serif, Tahoma, Helvetica !important; line-height: 13px !important; vertical-align: top !important; white-space: inherit !important; left: 968px; top: 1098px;"></div>
@@ -349,7 +350,7 @@ Tapsell.ShowAd(this, adId, showAdConfig,
 &lt;/RelativeLayout&gt;</pre>
 <h3><strong>گام 2: درخواست تبلیغ بنری هم‌نما</strong></h3>
 در تپسل، تبلیغ می تواند در ناحیه‌های مختلفی از برنامه شما (مانند منو اصلی، بین پست‌ها و ...) پخش شود. در تپسل به این ناحیه‌ها zone گفته می شود. ناحیه‌های هر اپلیکیشن در داشبورد تپسل تعریف می شوند. با اجرای تابع زیر، می‌توانید یک درخواست تبلیغ به تپسل ارسال کرده و یک تبلیغ دریافت نمایید:
-<pre style="direction: ltr; margin: 0; line-height: 125%;">requestNativeBannerAd(Context context, string zoneId, 
+<pre dir="ltr" style="margin: 0; line-height: 125%;">requestNativeBannerAd(Context context, string zoneId, 
     Action&lt;string&gt; onAdFilled, Action&lt;string&gt; onError, 
     Action onNoAdAvailable, Action onNoNetwork)
 </pre>
@@ -459,19 +460,19 @@ Action onNoAdAvailable, Action onNoNetwork, Action onRequestFilled, Action onHid
 از طرف دیگر، در اپلیکیشن‌ها و بازی‌های آنلاین، دریافت ویدئو در پس زمینه ممکن است در روند اصلی برنامه خلل ایجاد کند و آن را کند نماید.
 
 جهت جلوگیری از اشغال پهنای باند زیاد توسط تپسل، شما می‌توانید درصد مشخصی از کل پهنای باند موجود را به دانلود ویدئو اختصاص دهید. جهت انجام این عمل، تابع زیر را قبل از درخواست تبلیغ، فراخوانی کنید.
-<pre style="direction: ltr; margin: 0; line-height: 125%;">Tapsell<span style="color: #333333;">.</span><span style="color: #0000cc;">setMaxAllowedBandwidthUsagePercentage</span><span style="color: #333333;">(</span>context<span style="color: #333333;">,</span> maxPercentage<span style="color: #333333;">);</span></pre>
+<pre dir="ltr" style="margin: 0; line-height: 125%;">Tapsell<span style="color: #333333;">.</span><span style="color: #0000cc;">setMaxAllowedBandwidthUsagePercentage</span><span style="color: #333333;">(</span>context<span style="color: #333333;">,</span> maxPercentage<span style="color: #333333;">);</span></pre>
 &nbsp;
 
 در این تابع، ورودی <code>maxPercentage</code> حداکثر درصدی از پهنای باند در دسترس اپلیکیشن است که SDK تپسل از آن برای دریافت ویدئو استفاده می‌کند. این پارامتر باید عددی بین 0 تا 100 باشد.
 
 همچنین درصورتی که از سرعت دانلود واقعی کاربر در اپلیکیشن خود اطلاع دارید می‌توانید به کمک تابع زیر، مقدار حداکثر پهنای باند قابل استفاده برای دانلود ویدئو را به کمک تابع زیر تنظیم کنید.
-<pre style="direction: ltr; margin: 0; line-height: 125%;">Tapsell<span style="color: #333333;">.</span><span style="color: #0000cc;">setMaxAllowedBandwidthUsage</span><span style="color: #333333;">(</span>context<span style="color: #333333;">,</span> maxBpsSpeed<span style="color: #333333;">);</span></pre>
+<pre dir="ltr" style="margin: 0; line-height: 125%;">Tapsell<span style="color: #333333;">.</span><span style="color: #0000cc;">setMaxAllowedBandwidthUsage</span><span style="color: #333333;">(</span>context<span style="color: #333333;">,</span> maxBpsSpeed<span style="color: #333333;">);</span></pre>
 &nbsp;
 
 ورودی دوم این تابع، میزان حداکثر سرعت دانلود ویدئو است که باید به واحد بایت بر ثانیه داده شود.
 
 در صورتی که در بخشی از اپلیکیشن خود می‌خواهید تنظیمات مربوط به محدودیت سرعت دانلود را غیرفعال نمایید، از تابع زیر استفاده کنید.
-<pre style="direction: ltr; margin: 0; line-height: 125%;">Tapsell<span style="color: #333333;">.</span><span style="color: #0000cc;">clearBandwidthUsageConstrains</span><span style="color: #333333;">(</span>context<span style="color: #333333;">);</span></pre>
+<pre dir="ltr" style="margin: 0; line-height: 125%;">Tapsell<span style="color: #333333;">.</span><span style="color: #0000cc;">clearBandwidthUsageConstrains</span><span style="color: #333333;">(</span>context<span style="color: #333333;">);</span></pre>
 &nbsp;
 
 توضیحات بیشتر درباره کشینگ و استریمینگ در SDK تپسل را <a href="https://answers.tapsell.ir/?ht_kb=cached-vs-streamed">اینجا</a> بخوانید.
@@ -481,7 +482,7 @@ Action onNoAdAvailable, Action onNoNetwork, Action onRequestFilled, Action onHid
 از نسخه اندروید 6 و بالاتر، برخی دسترسی‌ها در اندروید در زمان اجرا باید از کاربر درخواست شوند. یکی از این دسترسی‌ها، دسترسی <code>READ_PHONE_STATE</code> است که توسط تپسل استفاده می‌شود و بدون این دسترسی نمایش بخشی از تبلیغات به کاربر ممکن نیست. برای سهولت پیاده‌سازی در صورت وجود این دسترسی در manifest برنامه، SDK تپسل بصورت اتوماتیک دسترسی‌ را از کاربر درخواست می‌کند و هربار درخواست تبلیغی ارسال شود، درصورتی که دسترسی مورد نیاز موجود نباشد، این دسترسی از کاربر خواسته می شود.
 
 در صورتی که شما می‌خواهید درخواست دسترسی‌ها از کاربر را به نحو دیگری در اپلیکیشن خود پیاده‌سازی نمایید، می‌توانید این ویژگی پیش‌فرض را در تپسل غیر فعال کنید. جهت انجام این عمل، کافیست ویژگی‌های مورد نیاز را هنگام فراخواهی تابع <code>initialize</code> از کتابخانه تپسل به عنوان ورودی تابع استفاده کنید.
-<pre style="direction: ltr; margin: 0; line-height: 125%;"><span style="color: #333333;">TapsellConfiguration config = new TapsellConfiguration();
+<pre dir="ltr" style="margin: 0; line-height: 125%;"><span style="color: #333333;">TapsellConfiguration config = new TapsellConfiguration();
 config.permissionHandlerMode = TapsellConfiguration.PERMISSION_HANDLER_AUTO;
 
 //config.isDebugMode = true;
