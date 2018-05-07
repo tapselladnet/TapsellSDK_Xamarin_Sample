@@ -288,7 +288,7 @@ Tapsell.ShowAd(this, adId, showAdConfig,
 </pre>
 <h3><strong>گام 3: نمایش تبلیغ هم‌نما</strong></h3>
 پس از اینکه شناسه تبلیغ از اکشن onAdFilled دریافت کردید می توانید با استفاده از تابع زیر آنرا نمایش دهید:
-<pre style="direction: ltr; margin: 0; line-height: 125%;">Tapsell.fillNativeVideoAd(Context context, String adId,
+<pre dir="rtl" style="margin: 0; line-height: 125%;">Tapsell.fillNativeVideoAd(Context context, String adId,
                                           bool autoStartVideo, bool fullscreenOnClick,
                                           TextView tvTitle, TextView tvDescription,
                                           ViewGroup vgVideoContainerParent, ImageView ivLogo,
